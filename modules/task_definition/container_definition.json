@@ -1,0 +1,27 @@
+[
+  {
+    "name": "${name}",
+    "image": "${image}",
+    "taskRoleArn": "${task_role_arn}",
+    "executionRoleArn": "${task_role_arn}",
+    "portMappings": [
+      {
+        "containerPort": ${container_port},
+        "hostPort": ${host_port}
+      }
+    ],
+    "cpu": ${cpu},
+    "memory": ${memory_hard_limit},
+    "memoryReservation": ${memory_soft_limit},
+    "networkMode": "${network_mode}",
+    "environment": ${env_vars},
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "${name}",
+        "awslogs-region": "us-east-1",
+        "awslogs-stream-prefix": "${name}"
+      }
+    }
+  }
+]
