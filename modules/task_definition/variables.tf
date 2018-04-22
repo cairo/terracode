@@ -30,10 +30,6 @@ variable "memory_soft_limit" {
   type = "string"
 }
 
-variable "network_mode" {
-  type = "string"
-}
-
 variable "env_vars" {
   type    = "map"
   default = {}

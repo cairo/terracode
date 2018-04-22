@@ -13,7 +13,6 @@
     "cpu": ${cpu},
     "memory": ${memory_hard_limit},
     "memoryReservation": ${memory_soft_limit},
-    "networkMode": "${network_mode}",
     "environment": ${env_vars},
     "logConfiguration": {
       "logDriver": "awslogs",
